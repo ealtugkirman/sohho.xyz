@@ -5,6 +5,7 @@
 
 .selector {
   cursor: url('./assets/cursor.png'), auto;
+  width: 100%
 }
 
 .animate-ping {
