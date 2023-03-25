@@ -12,7 +12,7 @@ import condom from "./assets/condom.png";
 
 export default function App() {
   return (
-    <div className="selector">
+    <div className="selector w-max">
       <Art />
       <Banner />
       <Navbar />
