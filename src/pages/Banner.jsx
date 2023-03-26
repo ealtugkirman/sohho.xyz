@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Card from "../components/Card";
 import crowd from "../assets/crowd.jpg";
 import Draggable from "react-draggable";
