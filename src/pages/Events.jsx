@@ -19,14 +19,14 @@ function Events() {
       title: "naber",
       imageSrc: bir,
       zIndex: 1,
-      position: { x: 1100, y: 500 },
+      position: { x: 2, y: 24 },
     },
     {
       id: 2,
       title: "naber",
       imageSrc: iki,
       zIndex: 1,
-      position: { x: 1030, y: 550 },
+      position: { x: 1030, y: 24 },
     },
     {
       id: 3,
@@ -68,7 +68,7 @@ function Events() {
       title: "naber",
       imageSrc: sekiz,
       zIndex: 1,
-      position: { x: 650, y: 510 },
+      position: { x: -50, y: 510 },
     },
   ]);
 
@@ -83,34 +83,29 @@ function Events() {
     setCards(updatedCards);
   };
   return (
-  <div className="bg-first" style={{ height: "900px" }}>
-  <motion.div
-    variants={fadeIn("", 0.9)}
-    initial="hidden"
-    whileInView={"show"}
-    viewport={{ once: true, amount: 0.1 }}
-    className="grid grid-cols-4 gap-4 lg:px-16 bg-first max-w-screen-xl">
-    {cards.map((card) => (
-      <Draggable key={card.id}>
-        <div
-          className="absolute w-2/12"
-          style={{
-            zIndex: card.zIndex,
-            left: `${card.position.x}px`,
-            top: `${card.position.y}px`,
-          }}
-          onClick={() => handleCardClick(card.id)}>
-          <Card
-            title={card.title}
-            className="animate-spin delay-1000"
-            imageSrc={card.imageSrc}
-          />
-        </div>
-      </Draggable>
-    ))}
-  </motion.div>
-</div>
-
+    <div className="bg-first" style={{ height: "900px" }}>
+      <motion.div
+        variants={fadeIn("", 0.9)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.1 }}
+        className="grid grid-cols-4 gap-4 lg:px-16 bg-first max-w-screen-xl">
+        {cards.map((card) => (
+          <Draggable key={card.id}>
+            <div
+              className={`absolute w-2/12 left-${card.position.x} top-${card.position.y}`}
+              style={{ zIndex: card.zIndex }}
+              onClick={() => handleCardClick(card.id)}>
+              <Card
+                title={card.title}
+                className="animate-spin delay-1000"
+                imageSrc={card.imageSrc}
+              />
+            </div>
+          </Draggable>
+        ))}
+      </motion.div>
+    </div>
   );
 }
 

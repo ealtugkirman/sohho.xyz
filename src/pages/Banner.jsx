@@ -6,7 +6,6 @@ import Info from "./Info";
 import sa from "../assets/AS.png";
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
-import Events from "./Events";
 
 function Banner() {
 
@@ -72,7 +71,6 @@ function Banner() {
       </motion.div>
         <motion.div variants={fadeIn('', 0.5)} initial="hidden" whileInView={"show"} viewport={{once:true, amount: 0.1}} className="right-8 top-5">
         <Info />
-        <Events />
         </motion.div>
         {/* <h1 className="text-second mt-96 text-4xl font-soho">SOHO</h1> */}
     </div>
