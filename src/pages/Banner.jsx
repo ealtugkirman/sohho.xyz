@@ -24,7 +24,7 @@ function Banner() {
         <Draggable>
           <div className="absolute top-2 w-2/6 right-16">
             <Card
-              title="selamunaleykum"
+              title="Good to see you"
               imageSrc={crowd}
               head="SOHO DURINGTHE NYFW SS18"
               desc="Get ready for an amazing DJ performance this Friday night at SOHO! We welcome anyone who wants to have a night filled with fun and dancing. You'll be able to listen to the most popular songs during the DJ set, dance with your friends, and have a great time. The event wontinue throughout the night."
@@ -35,7 +35,7 @@ function Banner() {
         <Draggable>
           <div className="absolute top-16 w-2/6 right-8">
             <Card
-              title="selamunaleykum"
+              title="Good to see you"
               imageSrc={crowd}
               head="SOHO DURINGTHE NYFW SS18"
               desc="Join us at SOHO this Saturday nighdfsdfdsfwdt for an unforgettable DJ experience! We're bringing in one of the hottest DJs in the city to spin the latest tracks and keep you dancing all night long. Whether you're coming with a group of friends or flying solo, you're guaranteed to have a great time."
@@ -47,7 +47,7 @@ function Banner() {
           <div className="absolute top-24 w-2/6 right-32">
             {" "}
             <Card
-              title="selamunaleykum"
+              title="Good to see you"
               imageSrc={crowd}
               head="SOHO DURINGTHE NYFW SS18"
               desc="Join us at SOHO this Saturday night for an unforgettable DJ experience! We're bringing in one of the hottest DJs in the city to spin the latest tracks and keep you dancing all night long. Whether you're coming with a group of friends or flying solo, you're guaranteed to have a great time."
@@ -60,7 +60,7 @@ function Banner() {
           <div className="absolute top-12 w-2/6 right-24">
             {" "}
             <Card
-              title="selamunaleykum"
+              title="Good to see you"
               imageSrc={crowd}
               head="SOHO DURINGTHE NYFW SS18"
               desc="Join us at SOHO this Saturday night for an unforgettable DJ experience! We're bringing in one of the hottest DJs in the city to spin the latest tracks and keep you dancing all night long. Whether you're coming with a group of friends or flying solo, you're guaranteed to have a great time."
